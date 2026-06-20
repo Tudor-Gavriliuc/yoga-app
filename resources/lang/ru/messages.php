@@ -6,6 +6,9 @@ return [
     'nav_plans' => 'Расписание',
     'nav_about' => 'О нас',
     'nav_contact' => 'Контакт',
+    'login' => 'Войти',
+    'register' => 'Регистрация',
+    'dashboard' => 'Панель',
     'start_free_trial' => 'Присоединиться',
     
     // Hero Section

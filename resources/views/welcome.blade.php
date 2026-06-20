@@ -159,6 +159,16 @@
             <li><a href="{{ route('about') }}">{{ __('messages.nav_about') }}</a></li>
             <li><a href="{{ route('schedule') }}">{{ __('messages.nav_plans') }}</a></li>
             <li><a href="#plans">{{ __('messages.our_plans') }}</a></li>
+            @if (Route::has('login'))
+                @auth
+                    <li><a href="{{ url('/dashboard') }}">{{ __('messages.dashboard') }}</a></li>
+                @else
+                    <li><a href="{{ route('login') }}">{{ __('messages.login') }}</a></li>
+                    @if (Route::has('register'))
+                        <li><a href="{{ route('register') }}">{{ __('messages.register') }}</a></li>
+                    @endif
+                @endauth
+            @endif
             <li class="language-switcher">
                 <select onchange="window.location.href = '/language/' + this.value" class="lang-select">
                     <option value="en" {{ app()->getLocale() === 'en' ? 'selected' : '' }}>English</option>

@@ -6,6 +6,9 @@ return [
     'nav_plans' => 'Program',
     'nav_about' => 'Despre',
     'nav_contact' => 'Contact',
+    'login' => 'Autentificare',
+    'register' => 'Înregistrare',
+    'dashboard' => 'Tablou de bord',
     'start_free_trial' => 'Alăturați-vă',
     
     // Hero Section

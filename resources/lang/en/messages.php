@@ -6,6 +6,9 @@ return [
     'nav_plans' => 'Schedule',
     'nav_about' => 'About',
     'nav_contact' => 'Contact',
+    'login' => 'Login',
+    'register' => 'Register',
+    'dashboard' => 'Dashboard',
     'start_free_trial' => 'Join Now',
     
     // Hero Section
